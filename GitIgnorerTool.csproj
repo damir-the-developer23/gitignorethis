@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>gitignorethis</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+
+        <PackageId>GitIgnoreThis</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Damir</Authors>
+        <Description>Interactive terminal UI (TUI) and CLI tool to instantly manage and add patterns to .gitignore.</Description>
+        <PackageTags>git gitignore cli dotnet-tool tui interactive</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/damir-the-developer23/gitignorethis</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Spectre.Console" Version="0.49.1" />
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
